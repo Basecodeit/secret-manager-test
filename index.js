@@ -8,6 +8,7 @@ exports.handler = async (event, context) => {
     console.log(event.headers.Authorization);
     console.log(process.env.environment);
     console.log(context);
+    console.log('test');
     
    await layer.auth(event.headers.Authorization.split(' ')[1], context.functionName);
   
