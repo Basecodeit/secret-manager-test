@@ -5,7 +5,6 @@ phases:
     commands:
       - echo Build started on `date`
       - npm install
-      - pip install
   pre_build:
     commands:
       - export TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
